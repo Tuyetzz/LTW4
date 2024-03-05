@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả thi trắc nghiệm</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylekq.css">
+</head>
+<body>
+    <div class="container">
+
+        <img src="../pics/logoptit.png" alt="PTIT University Logo" class="logo">
+        <h2>Kết quả thi trắc nghiệm</h2>
+        <div id="resultDetails">
+            <p>Tổng số câu trả lời đúng: 3<span id="correctAnswers"></span></p>
+            <p>Tổng số câu hỏi: 3<span id="totalQuestions"></span></p>
+            <p>Điểm của bạn: 10<span id="userScore"></span></p>
+        </div>
+        <button id="rvBtn" class="btn btnRs">Xem chi tiết</button>
+        <div id="reviewQuestions" style="display: none;">
+            <h3>Câu hỏi và đáp án</h3>
+            <!-- Câu hỏi và đáp án sẽ được thêm vào đây bằng JavaScript -->
+        </div>
+        <button id="homeBtn" class="btn btnRs">Trang chủ</button>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>

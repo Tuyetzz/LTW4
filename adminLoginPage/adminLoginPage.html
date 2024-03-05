@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="adminLoginPage-style.css">
+    
+</head>
+<body>
+    
+    <div id = "headerFrame">
+        <img src = "../img/logoPtit.png" alt = "Logo" id = "logo1">
+        <h1 id = "H1">Hệ Thống Thông Tin Quản Lý Kỳ Thi PTIT</h1>
+    </div>
+
+    <div id = "loginFrame">
+        <img src = "../img/PTIT.png" alt = "Logo" id = "logo2"><br><br>
+        <label>Tài khoản Admin:</label><br>
+        <input type = "text" id = "usernameInput"><br>
+        <div id = "invalidUsername" name = "error"></div>
+        <label>Mật khẩu:</label><br>
+        <input type = "password" id = "passwordInput"><br>
+        <div id = "invalidPassword" name = "error"></div>
+        <div style = "text-align: center; border-bottom: solid rgb(139, 138, 138) 1.5px; padding-bottom: 40px;">
+            <button id = "loginBtn" onclick = "toAdminPage()">Sign In</button><br>
+        </div>
+        <div style = "display: flex; margin-top: 10px;">
+            <p id = "toAdminLogin" onclick = "toLoginPage()">Trang dành cho sinh viên</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="adminLoginPage.js"></script>
+</body>
+</html>

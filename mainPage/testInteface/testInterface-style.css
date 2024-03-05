@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative; /* Cho phép #status-board được định vị tương đối so với <body> */
+}
+
+#quiz-container, #status-board {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 45%;
+}
+
+#status-board {
+    position: fixed; /* Đặt #status-board ở vị trí cố định trên màn hình */
+    top: 20px; /* Khoảng cách từ đỉnh màn hình */
+    right: 20px; /* Khoảng cách từ cạnh phải màn hình */
+    width: auto; /* Hoặc bạn có thể đặt chiều rộng cụ thể */
+    height: auto; /* Chiều cao tự động dựa vào nội dung */
+    max-width: 220px; /* Giới hạn chiều rộng tối đa, điều chỉnh tùy ý */
+}
+
+.status-item {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 12px;
+    display: inline-flex; /* Thay đổi từ flex sang inline-flex để các ô xếp hàng ngang */
+    justify-content: center;
+    align-items: center;
+}
+
+.answered {
+    background-color: #052fbb;
+}
+
+#timer {
+    font-size: 20px;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px; /* Đặt chiều rộng của ảnh */
+    top: 20px; /* Khoảng cách từ đỉnh của phần tử cha */
+    left: 20px; /* Khoảng cách từ cạnh trái của phần tử cha */
+    margin-right: 20px; /* Tạo khoảng cách với các phần tử bên phải */
+}
+
+#submit-btn{
+    margin-top: 20px; border: solid rgb(183, 183, 183) 1.5px; 
+    padding: 10px 35px; background-color: crimson; color:white;font-weight: bold; font-size: 1.5rem; 
+    border-radius: 5px; cursor:pointer; transition: 0.25s;
+}
+
+#submit-btn:hover{
+    background-color: rgb(255, 154, 3);
+}

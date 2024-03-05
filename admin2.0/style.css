@@ -1,0 +1,120 @@
+/* Thiết lập layout dạng cột */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+
+/* Thiết lập phần tử #boxTrai */
+#boxTrai {
+    flex: 5;
+    background-color: rgb(255, 255, 255); /* Màu nền của phần bên trái */
+    padding: 20px;
+}
+
+/* Thiết lập phần tử #boxPhai */
+#boxPhai {
+    flex: 1;
+    background-color: rgb(227, 227, 227); /* Màu nền của phần bên phải */
+    padding: 20px;
+}
+
+#benphai {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+/* Thiết lập bảng */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp đường viền của các ô */
+    margin-top: 20px;
+}
+
+thead th, tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd; /* Đường viền cho ô */
+}
+
+thead th {
+    background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+}
+
+/* Thiết lập nút */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #7d1900; /* Màu nền khi di chuột vào */
+}
+
+/* Thiết lập hình ảnh avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thiết lập phần tử thông tin người dùng */
+#personInfo {
+    margin-bottom: 20px;
+}
+
+/* Thiết lập phần tử button-container */
+#button-container {
+    text-align: center;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Đặt chiều rộng của box */
+}
+
+.form {
+    text-align: center;
+}
+
+.form label {
+    display: inline-block;
+    width: 100px; /* Đặt chiều rộng của label */
+    margin-right: 10px;
+}
+
+.form input[type="text"] {
+    width: 250px; /* Đặt chiều rộng của input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

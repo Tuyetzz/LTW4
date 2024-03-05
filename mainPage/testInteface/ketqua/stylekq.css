@@ -1,0 +1,22 @@
+.logo {
+    width: 150px; /* Đặt chiều rộng của ảnh */
+    margin-right: 20px; /* Tạo khoảng cách với các phần tử bên phải */
+}
+
+.btnRs {
+    background-color: crimson; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Đặt kích thước nút */
+    margin-top: 20px; /* Khoảng cách từ phần tử trên đó */
+    cursor: pointer; /* Thay đổi con trỏ khi di chuột vào nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.btnRs:hover {
+    background-color: #b30000; /* Màu nền khi di chuột vào nút */
+}
+.result-details-container {
+    display: flex;
+    justify-content: flex-end;
+}

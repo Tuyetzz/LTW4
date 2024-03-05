@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="mainPage-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div id = "container_1">
+        <div id = "headerFrame">
+            <img src = 'img/logoPtit.png' alt = 'logo' id = "logo1">
+            <h1 id = "h1">Hệ Thống Thi Trắc Nghiệm Trực Tuyến PTIT</h1>
+        </div>
+        <div id = "greeting">
+            <lable id = "greetingMessage">Xin chào, Hoàng Trung Hiếu</lable>
+            <img src = 'img/default-user.png' alt = 'image' id = "userImg">
+         </div>
+        <div class = "dropdown">
+            <img src = 'img/arrowIcon.png' alt = "Dropdown" onclick = "toggleDropdown()" class = "dropBtn" id = "dropdownIcon">
+            <div id = "dropdownFrame">
+                <p onclick = "toProfilePage()" style = "cursor: pointer">📑 Hồ sơ</p>
+                <p onclick = "toResultPage()" style = "cursor: pointer">💯 Điểm</p>
+                <p onclick = "toLoginPage()"style = "cursor: pointer">➡️ Đăng xuất</p>
+            </div>
+        </div>
+    </div>
+   
+    <div id = "container_2">
+        
+        <h1 id = "h2">Danh sách kỳ thi của bạn:</h1>
+        <br>
+        <div id = "filter">
+            <lable>Kỳ thi: </lable>
+            <select id = "testType">
+                <option value = "Tất cả">Tất cả</option>
+                <option value = "Luyện tập">Luyện tập</option>
+                <option value = "Giữa kỳ">Giữa kỳ</option>
+                <option value = "Cuối kỳ">Cuối kỳ</option>
+            </select>
+            <div id = "stateFrame">
+                <label id = "stateLabel">Trạng thái: </label>
+                <select id = "stateType" style = "margin-left: 10px; margin-right: 10px; height: 25px;" onchange = "openDateInput()">
+                    <option value = "Tất cả">Tất cả</option>
+                    <option value = "Tự do">Tự do</option>
+                    <option value = "Theo lịch">Theo lịch</option>
+                </select>
+                <div id = "dateInputFrame"></div>
+            </div>
+            <label for = "testName" id = "testNameLabel">Tên kỳ thi: </label>
+            <div class = "search-container">
+                <input type = "text" id = "testName" placeholder = "Type to search">
+                <div id = "suggestions-list"></div>
+            </div>
+            <button id = "searchBtn" onclick = "query()">Tìm kiếm</button>
+        </div>
+    </div>
+
+    <div id = "container_3">
+        <table class = "table table-striped">
+            <tr class = "bg-info">
+                <th style = "background-color: crimson; color: white;">STT</th>
+                <th style = "background-color: crimson; color: white;">Loại</th>
+                <th style = "background-color: crimson; color: white;">Tên kỳ thi</th>
+                <th style = "background-color: crimson; color: white;">Mô tả</th>
+                <th style = "background-color: crimson; color: white;">Trạng thái</th>
+                <th style = "background-color: crimson; color: white;">Ngày thi</th>
+                <th style = "background-color: crimson; color: white;">Thời gian bắt đầu</th>
+                <th style = "background-color: crimson; color: white;">Bắt đầu làm bài</th>
+            </tr>
+
+            <tbody id = "testTable">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="mainPage.js"></script>
+</body>
+</html>

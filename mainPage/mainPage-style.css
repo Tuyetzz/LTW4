@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container_1{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid rgb(180, 180, 180) 1.5px;
+    max-height: 50px;
+
+}
+
+#headerFrame{
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#h1{
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-right: 600px;
+}
+
+#logo1{
+    max-height: 30px;
+    max-width: 30px;
+    margin-right: 20px;
+    margin: left;
+}
+
+#greeting{
+    display: flex;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+#greetingMessage{
+    margin-top: 5px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#userImg{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 10px;
+}
+
+#dropdownIcon{
+    max-width: 10px;
+    max-height: 10px;
+    margin-top: 20px;
+}
+#dropdownFrame{
+    display: none;
+    border: solid rgb(180, 180, 180) 1.5px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-right: 25px;
+    margin-right: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#container_2{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#h2{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+#filter{
+    display: flex;
+    max-width: 1450px;
+    max-height: 50px;
+    border: solid rgb(180, 180, 180) 1.5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: left;
+    white-space: nowrap;
+}
+
+#stateLabel {
+    margin-left: 10px;
+    height: 30px;
+}
+
+#stateFrame {
+    display: flex;
+    white-space: nowrap;
+    max-height:40px;
+}
+
+#dateInputFrame{
+    display: flex;
+}
+
+#testNameLabel{
+    margin-left: 5px;
+}
+
+#searchBtn{
+    margin-left: 20px;
+}
+
+#testType{
+    margin-left:5px;
+    height: 25px;
+}
+#openDate{
+    height: 25px;
+}
+#testName{
+    height: 25px;
+    margin-left: 5px;
+}
+
+#suggestions-list {
+    list-style: none;
+    padding: 1px;
+    margin: 0;
+}
+
+.suggestion-item {
+    border: solid rgb(180, 180, 180) 1.5px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+}
+
+.suggestion-item:hover {
+    background-color: #f4f4f4;
+}
+
+#searchBtn{
+    height: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: crimson;
+    transition: 0.25s;
+    border-radius: 3px;
+}
+
+#searchBtn:hover{
+    background-color: darkred;
+}
+
+
+

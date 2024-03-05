@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "signupPage-style.css">
+</head>
+<body>
+    <div id = "headerFrame">
+        <img src = "../img/logoPtit.png" alt = "Logo" id = "logo1">
+        <h1 id = "H1">Hệ Thống Thi Trắc Nghiệm Trực Tuyến PTIT</h1>
+    </div>
+
+    <div id = "signupFrame">
+        <img src = "../img/PTIT.png" alt = "Logo" id = "logo2"><br><br>
+
+        <label>Tên tài khoản:</label><br>
+        <input type = "text" id = "usernameInput"><br>
+        <div id = "invalidUsername" name = "error"></div>
+
+        <label>Email:</label><br>
+        <input type = "text" id = "emailInput"><br>
+        <div id = "invalidEmail" name = "error"></div>
+
+        <label>Mật khẩu:</label><br>
+        <input type = "password" id = "passwordInput"><br>
+        <div id = "invalidPassword" name = "error"></div>
+
+        <label">Xác thực Mật khẩu:</label><br>
+        <input type = "password" id = "confirmedPasswordInput"><br>
+        <div id = "notMatchedPassword" name = "error"></div>
+
+        <button id = "signupBtn" onclick = "register()">NHẤN ĐỂ ĐĂNG KÝ</button>
+        <label>Bạn đã có tài khoản?</label>
+        <label id = "backToLogin" onclick = "toLoginPage()">Đăng nhập ngay<label>
+
+    </div>
+    <script src = "signupPage.js"></script>
+</body>
+</html>

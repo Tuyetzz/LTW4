@@ -1,0 +1,87 @@
+body{
+    display: flex;
+}
+
+#leftSidePart{
+    width: 25%;;
+    border-right: solid rgb(185, 185, 185) 4px;
+    padding-bottom: 100px;
+    white-space: nowrap;
+    position: sticky;
+}
+#rightSidePart{
+    width: 75%;
+}
+
+#goBackContainer{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#imgContainer{
+    border-top: solid rgb(187, 187, 187) 1.5px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom:solid rgb(187, 187, 187) 1.5px ;
+}
+
+
+
+#logo1{
+    max-width: 150px;
+}
+
+#searchBarContainer{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+#searchBar{
+    height: 25px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+#searchBtn{
+    width: 300px; 
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#stdInfoContainer{
+    padding-left: 15px;
+}
+
+#suggestions-list {
+    list-style: none;
+    padding: 1px;
+    margin: 0;
+}
+
+.suggestion-item {
+    border: solid rgb(180, 180, 180) 1.5px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;    
+    position: absolute;
+}
+
+.suggestion-item:hover {
+    background-color: #f4f4f4;
+}
+
+#goBackLine:hover{
+    text-decoration: underline;
+}
